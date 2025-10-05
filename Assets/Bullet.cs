@@ -5,13 +5,12 @@ using UnityEngine;
 public class Bullet : MonoBehaviour{
     public float speed = 30f;
     public float lifetime = 3f;
+    private Rigidbody rb;
 
     void Start(){
+        rb = GetComponent<Rigidbody>();
+        rb.velocity = transform.forward * speed;
         Destroy(gameObject, lifetime);  
-    }
-
-    void Update(){
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
     void OnCollisionEnter(Collision collision){
