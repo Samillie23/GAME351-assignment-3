@@ -3,7 +3,9 @@ guid: 52aa102d9e1099644b7d43948419ff48
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - explosionEffect: {instanceID: 0}
+  - debrisPrefab: {fileID: 100000, guid: 86d23b3a54b86d24da4e5ae1cca7e27b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -7,10 +7,10 @@ public class Barrel : MonoBehaviour{
     public GameObject debrisPrefab;
     
     public void Explode(){
+        Debug.Log("Explode");
         Instantiate(explosionEffect, transform.position, Quaternion.identity);
         Instantiate(debrisPrefab, transform.position, transform.rotation);
-        Destroy(gameObject);
-        
+        Destroy(gameObject, 1f);
     }
 
    

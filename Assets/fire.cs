@@ -9,7 +9,7 @@ public class fire : MonoBehaviour{
     private float nextFireTime = 0f;
 
     void Update(){
-        if(Input.GetKeyDown(KeyCode.F) && Time.time >= nextFireTime){
+        if(Input.GetKeyDown("f") && Time.time >= nextFireTime){
             Shoot();
             nextFireTime = Time.time + 1f / fireRate;
         }  

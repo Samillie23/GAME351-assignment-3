@@ -8,13 +8,13 @@ public class Bandit : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        
     }
 
     // Update is called once per frame
     public void Die()
     {
+        Debug.Log("Die");
         animator.SetTrigger("Die");
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, 1.5f);
     }
 }
