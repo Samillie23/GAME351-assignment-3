@@ -38,10 +38,15 @@ public class CameraController : MonoBehaviour
 
     void Reset()
     {
-        if (Input.GetKey("r"))
+        if (Input.GetKeyDown("r"))
         {
-            orbitcam.m_XAxis.Value = 0f;
-            orbitcam.m_YAxis.Value = .5f;
+            orbitcam.m_RecenterToTargetHeading.m_enabled = true;
+            orbitcam.m_YAxisRecentering.m_enabled = true;
+        }
+        else
+        {
+            orbitcam.m_RecenterToTargetHeading.m_enabled = false;
+            orbitcam.m_YAxisRecentering.m_enabled = false;
         }
     }
 
