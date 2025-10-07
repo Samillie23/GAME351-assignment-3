@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Mono.Cecil.Cil;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
@@ -7,7 +8,7 @@ using UnityEngine.Timeline;
 public class CutsceneSkip : MonoBehaviour
 {
     private PlayableDirector playableDirector;
-       
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,8 +21,8 @@ public class CutsceneSkip : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             playableDirector.time = playableDirector.playableAsset.duration;
-            playableDirector.Evaluate(); 
-            playableDirector.Stop(); 
+            playableDirector.Evaluate();
+            playableDirector.Stop();
         }
     }
 }
