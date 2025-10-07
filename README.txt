@@ -12,7 +12,7 @@ Implemented features:
 1. Cutscene Cameras: On start a cutscene is played using a variety of cameras on dolly systems and in place. Timeline is used to sequence events and transition between scenes. The 'ESC' key can be pressed to skip to the end of the cutscene.
 2. Player can Kick: Pressing the 'SPACEBAR' will apply a one of three animations randomly to kick. This kick can push daround dynamiac objects and the kick force is adjustable through the inspector.
 3. Shoot at Targets: Pressing 'F' will shoot out a "bullet" prefab out. The bullet has adjustable lifetime and speed. When the bullet collides with either a bandit or barrel their respective effects will play out. Bandits will play their death animation and barrels will play a explosion vfx and spawn in debris. In both cases the original target will get destroyed as well. However the bullet is stuck as a capsule as seen in gameplay.
-4. Dynamic Soundtrack:
+4. Dynamic Soundtrack: Only the bandit taunts and ambience were implemented. The ambience starts playing whenever the cutscene ends and stays during the whole gameplay. The bandit taunt script works but enabling the AudioSource component whenever the cutscene ended seemed to have some issues.
 5. Toggle the Camera: Both a orbit camera and first person camera have been made for the character. Pressing 'T' can swap between the two. While in orbit mode, you can press 'R' to reset to behind the character, hold down the left mouse button to drag the point of view around. WASD movement works the same in both modes
 
 To install the project, follow these steps:
