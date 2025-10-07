@@ -7,6 +7,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour{
     public float speed = 30f;
     public float lifetime = 3f;
+    //[SerializeField]private AudioClip DeathSoundClip
 
     Rigidbody rb;
 
@@ -33,6 +34,8 @@ public class Bullet : MonoBehaviour{
             }
             Debug.Log("Bandit Collision");
         }
+        //play sfx
+        //SoundFXManager.instance.PlaySoundFXClip(DeathSoundClip, transform, 1f);
         Destroy(gameObject);
     }
 
